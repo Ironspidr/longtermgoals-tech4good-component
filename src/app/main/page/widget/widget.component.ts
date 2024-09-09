@@ -18,6 +18,7 @@ import { LongTermGoal } from '../../../core/store/long-term-goal/long-term-goal.
 })
 export class WidgetComponent implements OnInit {
   // --------------- INPUTS AND OUTPUTS ------------------
+  showModal = false;
 
   /** The long term goal. */
   @Input() longTermGoal: LongTermGoal = {
@@ -43,8 +44,19 @@ export class WidgetComponent implements OnInit {
   ngOnInit(): void {}
 
   onEdit() {
-    setTimeout(() => {
-      this.editGoals.emit();
-    }, 2000);
+    // setTimeout(() => {
+    //   this.editGoals.emit();
+    // }, 2000);
+    alert("Hello");
+  }
+
+  openModal() {
+    this.showModal = true;
+  }
+
+  closeModal() {
+    this.showModal = false;
   }
 }
+
+

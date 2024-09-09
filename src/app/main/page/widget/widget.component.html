@@ -4,10 +4,6 @@
       <div class="header">
         <h1>Long-term Goals</h1>
       </div>
-
-      <div class="icon">
-        <span class="material-icons"> close </span>
-      </div>
     </div>
 
     <div class="form">
@@ -31,9 +27,10 @@
     </div>
 
     <div class="edit-icon">
-      <button (click)="onEdit()">
+      <button (click)="openModal()">
         <span class="material-icons"> edit </span>
       </button>
     </div>
+    <app-modal *ngIf="showModal" [dataFromWidget]="longTermGoal" (close)="closeModal()"></app-modal>
   </div>
 </div>

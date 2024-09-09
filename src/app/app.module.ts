@@ -13,11 +13,11 @@ import { MainModule } from './main/main.module';
 
 //Heroicons
 import { NgModule } from '@angular/core';
-// import { ModalComponent } from "./app/main/page/modal/modal.components";
-import ModalComponent from "/main/page/modal/modal.components";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

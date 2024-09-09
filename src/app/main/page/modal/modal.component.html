@@ -1,3 +1,33 @@
 <div class="modal">
-  modal works!
+  <div class="main">
+    <h1>Long-Term Goals Edit</h1>
+
+  </div>
+  <form name="editForm">
+    <div class="form">
+      <div class="vertical-line"></div>
+      <div class="form-content">
+        <h3>1 year</h3>
+        <input type="text" name="oneYear" id="oneYear">
+      </div>
+    </div>
+    
+    <div class="form">
+      <div class="vertical-line"></div>
+      <div class="form-content">
+        <h3>5 year</h3>
+        <input type="text" name="fiveYears" id="fiveYears">
+      </div>
+    </div>
+
+    <div class="edit-icon">
+      <button (click)="closeModal()" type="submit">
+        <span class="material-icons">
+          done
+          </span>
+      </button>
+    </div>
+  </form>
+
 </div>
+

@@ -71,6 +71,12 @@ export class PageComponent implements OnInit {
     // --------------- LOAD DATA ---------------------------
     // Once everything is set up, load the data for the role.
   }
+  editGoals() {
+    // setTimeout(() => {
+    //   this.editGoals.emit();
+    // }, 2000);
+    alert("Howdy");
+  }
 
   ngOnDestroy() {
     // Unsubscribe subscriptions.
